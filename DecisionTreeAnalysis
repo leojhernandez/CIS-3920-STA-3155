@@ -48,5 +48,3 @@ testPred <- predict(tree, newdata=validate)
 tab <- table(testPred,validate$NSPF)
 print(tab)
 1-sum(diag(tab)/sum(tab))
-
-
