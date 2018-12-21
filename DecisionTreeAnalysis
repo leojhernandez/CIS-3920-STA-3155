@@ -1,0 +1,52 @@
+#Learning to use Decision Trees with Party and Rpart Packages
+
+rm(list = ls ()) #whenever we want to cleanup our project space, this will be the key
+
+data <- read.csv(file.choose(),header = T)
+
+View(data) #Viewing our dataset in a table sheet
+str(data)
+
+data$NSPF <- factor(data$NSP) #adding a new continuous variable to the dataset
+str(data)
+
+#data partition and validation datasets 
+set.seed(1234)
+
+pd <- sample(2, nrow(data), replace = TRUE, prob = c(.8,.2) )
+
+train <- data[pd==1,]
+validate <- data[pd==2,]
+
+#decision tree with party package
+library(party)
+tree <- ctree(NSPF~LB+AC+FM , data = train, controls = ctree_control(mincriterion = .99, minsplit = 500) )
+tree
+plot(tree)
+
+#predict
+predict(tree,validate, type = "prob")
+
+#decision tree with rpart
+library(rpart)
+
+treeone <- rpart(NSPF~LB+AC+FM, train)
+library(rpart.plot)
+rpart.plot(treeone, extra = 1)
+
+#Predict 
+predict(treeone, validate)
+
+#Misclassification error for 'train' dataset
+
+tab <- table(predict(tree),train$NSPF)
+print(tab)
+1-sum(diag(tab)/sum(tab)) #misclassification error rate on he training data
+
+#Misclassification error with validate dataset 
+testPred <- predict(tree, newdata=validate)
+tab <- table(testPred,validate$NSPF)
+print(tab)
+1-sum(diag(tab)/sum(tab))
+
+
