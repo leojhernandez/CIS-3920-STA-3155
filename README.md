@@ -1,2 +1,2 @@
 # R for Programming
-A repository for a Data Mining class that I took during the Fall 2018 semester at Baruch College 
+A repository for a Data Mining and Forecasting and Regression class. 
