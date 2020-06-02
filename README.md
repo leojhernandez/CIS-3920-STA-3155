@@ -16,5 +16,5 @@ Books:
 + An Introduction to Statistical Learning: with Applications in R by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani.
 
 Helpful links:
-+ [R Colors!](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
++ [Colors in R!](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 + [Graphical Parameters](https://www.statmethods.net/advgraphs/parameters.html)
