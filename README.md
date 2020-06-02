@@ -14,3 +14,7 @@ Books:
 + Business Statistics (4nd edition), by Sharpe, De Veaux, and Velleman
 + Introduction to Data Mining (1st Edition) by Pang-Ning Tan, Michael Steinbach and Vipin Kumar
 + An Introduction to Statistical Learning: with Applications in R by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani.
+
+Helpful links:
++ [R Colors!](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
++ [Graphical Parameters](https://www.statmethods.net/advgraphs/parameters.html)
