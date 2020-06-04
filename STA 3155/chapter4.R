@@ -1,4 +1,4 @@
-# Charge 4: Correlation and Regression
+# Chapter 4: Correlation and Regression
 # Summary:
 
 # good 2 haves!
