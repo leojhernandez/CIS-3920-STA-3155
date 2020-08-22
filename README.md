@@ -19,3 +19,5 @@ Helpful links:
 + [Colors in R!](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 + [Graphical Parameters](https://www.statmethods.net/advgraphs/parameters.html)
 + [What are QQ plots?](https://data.library.virginia.edu/understanding-q-q-plots/)
++ [Ladder of Powers](http://onlinestatbook.com/2/transformations/tukey.html)
++ [Identifying Outliers](http://r-statistics.co/Outlier-Treatment-With-R.html)
